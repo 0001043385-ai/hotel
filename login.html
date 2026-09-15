@@ -1,10 +1,28 @@
 <html>
     <head>
         <title>login-hotelsystem</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <style>
+            form{ width: 300px;
+                margin:0 auto; }
+                input{
+                    width: 100%;
+                    padding: 8px;
+                    box-sizing: border-box;
+                }
+                button{
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #0056b3;
+                    color: white;
+                    border: nono;
+                    cursor: pointer;
+                }
+        </style>
     </head>
     <body>
-        <h1>hotelsystem</h1>
-        <h2>acesso do cliente</h2>
+        <h1 style="text-align: center;">hotelsystem</h1>
+        <h2 style="color: #333333; text-align: center;">acesso do cliente</h2>
         <form action="autenticar.php" method="post">
           <label for="email">e-mail</label><br>
           <input type="email" name="email" id="email" required><br><br>
@@ -12,8 +30,6 @@
           <input type="password" name="senha" id="senha" required><br><br>
           <button type="submit">entrar</button>
         </form>
-        <a href="cadastro_cliente.html">clique aqui para se cadastrar
-            
-        </a>
+        <a href="cadastro_cliente.html" style="display :table; margin: 0 auto;";>clique aqui para se cadastrar</a>
     </body>
 </html>

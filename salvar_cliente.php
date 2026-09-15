@@ -7,7 +7,7 @@ $email =$_POST['email'];
 $telefone =$_POST['telefone'];
 $senha =$_POST['senha'];
 
-$sql = "INSERT INTO cliente (nome,email,telefone,senha) VALUES ('$nome', '$email', '$telefone', '$senha')";
+$sql = "INSERT INTO clientes (nome,email,telefone,senha) VALUES ('$nome', '$email', '$telefone', '$senha')";
 
 
 
