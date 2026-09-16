@@ -2,11 +2,15 @@
 
 require_once "conexao.php";
 
-$nome = $_POST['nome'];
+$nome_hotel = $_POST['nome_hotel'];
 $cidade =$_POST['cidade'];
 $estrelas =$_POST['estrelas'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
-$sql = "INSERT INTO clientes (nome,cidade,estrelas) VALUES ('$nome', '$cidade', $estrelas)";
+$sql = "INSERT INTO hoteis (nome,cidade,estrelas,
+email,senha) VALUES ('$nome_hotel', '$cidade',
+'$estrelas' '$email', '$senha')";
 
 if(mysqli_query($conexao, $sql)){
 
@@ -14,6 +18,5 @@ if(mysqli_query($conexao, $sql)){
 else{
     
 }
-
 
 ?>
