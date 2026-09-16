@@ -8,8 +8,6 @@ $estrelas =$_POST['estrelas'];
 
 $sql = "INSERT INTO clientes (nome,cidade,estrelas) VALUES ('$nome', '$cidade', $estrelas)";
 
-
-
 if(mysqli_query($conexao, $sql)){
 
 }
