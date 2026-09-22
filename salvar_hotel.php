@@ -2,7 +2,7 @@
 
 require_once "conexao.php";
 
-$nome_hotel = $_POST['nome_hotel'];
+$nome_hotel = $_POST['nome'];
 $cidade =$_POST['cidade'];
 $estrelas =$_POST['estrelas'];
 $email = $_POST['email'];
@@ -10,7 +10,7 @@ $senha = $_POST['senha'];
 
 $sql = "INSERT INTO hoteis (nome,cidade,estrelas,
 email,senha) VALUES ('$nome_hotel', '$cidade',
-'$estrelas' '$email', '$senha')";
+$estrelas, '$email', '$senha')";
 
 if(mysqli_query($conexao, $sql)){
 
